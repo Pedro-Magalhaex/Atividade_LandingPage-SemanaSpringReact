@@ -1,0 +1,151 @@
+/*====================== 
+GERAL
+======================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+    /* --cor-1: #ff890a; */
+    --cor-1: #ff8446;
+    --cor-2: #000000;
+    --cor-3: #222222;
+    --cor-4: #e57036;
+    --fonte-principal: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal), Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(40deg, var(--cor-1), var(--cor-2) 70%);
+}
+
+/*====================== 
+MAIN
+======================*/
+
+main{
+    height: 100vh;
+    max-height: 584px;
+    margin: auto;
+    margin-top: 3%;
+    width: 1080px;
+    display: flex;
+    justify-content: right;
+}
+
+/*====================== 
+SECTION 1 - CONTEÚDO PRINCIPAL
+======================*/
+
+.sessao-conteudo{
+    text-align: center;
+    width: 100%;
+}
+
+/*---------------------- 
+SECTION 1 - LOGOS E TEXTOS
+----------------------*/
+
+picture img{
+    width: 45px;
+}
+
+h1 {
+    font-size: 52px;
+    color: var(--cor-1);
+}
+
+p {
+    font-size: 22px;
+    color: white;
+}
+
+h2{
+    color: var(--cor-1);
+    margin-top: 2.5%;
+}
+
+/*---------------------- 
+SECTION 1 - FORMULÁRIO
+----------------------*/
+
+fieldset{
+    width: 590px;
+    margin: auto;
+    margin-top: 3%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor-3);
+    padding: 3%;
+}
+
+h3{
+    font-size: 35px;
+    color: var(--cor-1);
+}
+
+#email{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-top: 3%;
+}
+
+.checkbox{
+    text-align: left;
+    color: white;
+    margin-top: 3%;
+}
+
+#checkbox{
+    cursor: pointer;
+    float: left;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+
+#botao{
+    margin-top: 6%;
+    width: 100%;
+    font-size: 20px;
+    padding: 13px;
+    font-weight: 600;
+    color: white;
+    background-color: var(--cor-1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#botao:hover{
+    padding: 15px 11px 11px 15px;
+    box-shadow: inset 2px 2px 3px black;
+}
+
+form p {
+    font-size: 15px;
+    color: gray;
+}
+
+/*---------------------- 
+SECTION 2 - IMAGEM DA MODELO
+----------------------*/
+
+.sessao-imagem{
+    max-height: 584px;
+    display: grid;
+    justify-items: center;
+    align-items: flex-end;
+}
+
+.sessao-imagem img{
+    width: 440px;
+    transform: rotateY(180deg);
+}
